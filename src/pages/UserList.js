@@ -10,7 +10,7 @@ const UserList = () => {
       const data = await getUsers();
       setUsers(data);
     };
-    
+
     fetchUsers();
   }, []);
 
@@ -27,8 +27,8 @@ const UserList = () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
+            <tr key={user._id}>
+              <td>{user._id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
             </tr>

@@ -10,7 +10,7 @@ const AddUser = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newUser = { name, email };
-    
+
     const addedUser = await addUser(newUser);
 
     if (addedUser) {
